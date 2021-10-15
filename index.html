@@ -7,145 +7,151 @@ and open the template in the editor.
 
 <html>
 
-    <head lang="en">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta charset="utf-8">
+<head lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
 
-        <title>Single Page App Without A Framework</title>
+    <title>Single Page App Without A Framework</title>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        <script defer src="js/model.js"></script>
-        <script defer src="js/view.js"></script>
-        <script defer src="js/presenter.js"></script>
-        <script defer src="js/router.js"></script>
-    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script defer src="js/model.js"></script>
+    <script defer src="js/view.js"></script>
+    <script defer src="js/presenter.js"></script>
+    <script defer src="js/router.js"></script>
+</head>
 
-    <body>
-        <header>
-            <i class="fas fa-volleyball-ball" style="font-size:60px;color:red;"></i>
-            <h1>Single-Page-App</h1>
-            <div class="loginButton">
-                <button type="button" class="login" style="padding:10px;background:red;">Hallo</button>
-            </div>
-        </header>
+<body>
+    <header class="header">
+        <i class="fas fa-volleyball-ball"></i>
+        <h1>Single-Page-App</h1>
+        <div class="loginButton">
+        </div>
+    </header>
+    <hr>
+
+    <main id="main-content">
+    </main>
+
+
+    <div id="templates">
         <hr>
-
-        <main id="main-content">
-        </main>
-
-
-        <div id="templates">
-            <hr>
-            <div id="Blog_Overview">
-                <div id="Sidebar">
-                    <h4>Sportligen</h4>
-                    <button id="CategoryButton" style="padding:10px;background:blue;"> NFL</button>
-                    <button id="CategoryButton" style="padding:10px;background:blue;"> NBA</button>
-                    <button id="CategoryButton" style="padding:10px;background:blue;"> Bundesliga</button>
-                    <button id="CategoryButton" style="padding:10px;background:blue;"> NHL</button>
-                </div>
-                <div id="News">
-                    <h3 style="background-color: aqua; padding: 100px;">News</h3>
-                    <div id="Blogpost">
-                        <img style="width: 500px;" src="https://www.deutschlandfunk.de/media/thumbs/5/5a454c2de10a75b09a69b3a66a370a8ev1_max_755x424_b3535db83dc50e27c1bb1392364c95a2.jpg?key=4396a9" alt="Edit">
-                        <text>Beim lange Zeit ungefährdeten 28:22 des Super-Bowl-Champions 
-                            am Donnerstag (Ortszeit) bei den Philadelphia Eagles 
-                            warf der 44-Jährige Routinier zwei Touchdowns.
-                            Die Bucs bleiben durch den fünften Erfolg im 
-                            sechsten Spiel an der Spitze der NFC South.
-                        </text>
-                    </div>
+        <div id="Blog_Overview">
+            <div id="Sidebar" class="sidebar">
+                <h4>Sportligen</h4>
+                <button id="CategoryButton" class="categoryBtn"> NFL</button>
+                <button id="CategoryButton" class="categoryBtn"> NBA</button>
+                <button id="CategoryButton" class="categoryBtn"> Bundesliga</button>
+                <button id="CategoryButton" class="categoryBtn"> NHL</button>
+            </div>
+            <div id="News" class="siteContent">
+                <h3>News</h3>
+                <div id="Blogpost">
+                    <img style="width: 500px;"
+                        src="https://www.deutschlandfunk.de/media/thumbs/5/5a454c2de10a75b09a69b3a66a370a8ev1_max_755x424_b3535db83dc50e27c1bb1392364c95a2.jpg?key=4396a9"
+                        alt="Edit">
+                    <text>Beim lange Zeit ungefährdeten 28:22 des Super-Bowl-Champions
+                        am Donnerstag (Ortszeit) bei den Philadelphia Eagles
+                        warf der 44-Jährige Routinier zwei Touchdowns.
+                        Die Bucs bleiben durch den fünften Erfolg im
+                        sechsten Spiel an der Spitze der NFC South.
+                    </text>
                 </div>
             </div>
-            <hr>
-            <div id="Blogpost_Detail">
-                <div id="Sidebar">
-                    <h4>Sportligen</h4>
-                    <button id="CategoryButton" style="padding:10px;background:blue;"> NFL</button>
-                    <button id="CategoryButton" style="padding:10px;background:blue;"> NBA</button>
-                    <button id="CategoryButton" style="padding:10px;background:blue;"> Bundesliga</button>
-                    <button id="CategoryButton" style="padding:10px;background:blue;"> NHL</button>
-                </div>
-                <div id="Details">
-                    <div id="Blogpost">
-                        <img style="width: 500px; margin-top: 100px;" src="https://www.deutschlandfunk.de/media/thumbs/5/5a454c2de10a75b09a69b3a66a370a8ev1_max_755x424_b3535db83dc50e27c1bb1392364c95a2.jpg?key=4396a9" href="https://www.youtube.com/watch?v=Z_xUiW-ozHw&ab_channel=NFL" alt="Edit">
-                        <text>Beim lange Zeit ungefährdeten 28:22 des Super-Bowl-Champions 
-                            am Donnerstag (Ortszeit) bei den Philadelphia Eagles 
-                            warf der 44-Jährige Routinier zwei Touchdowns.
-                            Die Bucs bleiben durch den fünften Erfolg im 
-                            sechsten Spiel an der Spitze der NFC South.
-                        </text>
-                    </div>
-                </div>
+        </div>
+        <hr>
+        <div id="Blogpost_Detail">
+            <div id="Sidebar" class="sidebar">
+                <h4>Sportligen</h4>
+                <button id="CategoryButton" class="categoryBtn"> NFL</button>
+                <button id="CategoryButton" class="categoryBtn"> NBA</button>
+                <button id="CategoryButton" class="categoryBtn"> Bundesliga</button>
+                <button id="CategoryButton" class="categoryBtn"> NHL</button>
             </div>
-            <hr>
-            <div id="Category_Overview">
-                <div id="Sidebar">
-                    <h4>Sportligen</h4>
-                    <button id="CategoryButton" style="padding:10px;background:red;"> NFL</button>
-                    <button id="CategoryButton" style="padding:10px;background:blue;"> NBA</button>
-                    <button id="CategoryButton" style="padding:10px;background:blue;"> Bundesliga</button>
-                    <button id="CategoryButton" style="padding:10px;background:blue;"> NHL</button>
-                </div>
-                <div id="News">
-                    <h3 style="background-color: aqua; padding: 100px;">NFL</h3>
-                    <div id="Blogpost">
-                        <img style="width: 500px;" src="https://www.deutschlandfunk.de/media/thumbs/5/5a454c2de10a75b09a69b3a66a370a8ev1_max_755x424_b3535db83dc50e27c1bb1392364c95a2.jpg?key=4396a9" alt="Edit">
-                        <text>Beim lange Zeit ungefährdeten 28:22 des Super-Bowl-Champions 
-                            am Donnerstag (Ortszeit) bei den Philadelphia Eagles 
-                            warf der 44-Jährige Routinier zwei Touchdowns.
-                            Die Bucs bleiben durch den fünften Erfolg im 
-                            sechsten Spiel an der Spitze der NFC South.
-                        </text>
-                    </div>
+            <div id="Details" class="siteContent">
+                <div id="Blogpost">
+                    <img style="width: 500px; margin-top: 100px;"
+                        src="https://www.deutschlandfunk.de/media/thumbs/5/5a454c2de10a75b09a69b3a66a370a8ev1_max_755x424_b3535db83dc50e27c1bb1392364c95a2.jpg?key=4396a9"
+                        href="https://www.youtube.com/watch?v=Z_xUiW-ozHw&ab_channel=NFL" alt="Edit">
+                    <text>Beim lange Zeit ungefährdeten 28:22 des Super-Bowl-Champions
+                        am Donnerstag (Ortszeit) bei den Philadelphia Eagles
+                        warf der 44-Jährige Routinier zwei Touchdowns.
+                        Die Bucs bleiben durch den fünften Erfolg im
+                        sechsten Spiel an der Spitze der NFC South.
+                    </text>
                 </div>
             </div>
-
-            
-
-            <div id="overview" hidden>
-                <h3>Mitarbeiter Übersicht</h3>
-                <ul>
-                    <li>
-                        <div>
-                            <p> %name </p>
-                            <nav>
-                            </nav>
-                        </div>
-                    </li>
-                </ul>
-                <button type="button"> Person hinzufügen </button>
+        </div>
+        <hr>
+        <div id="Category_Overview">
+            <div id="Sidebar" class="sidebar">
+                <h4>Sportligen</h4>
+                <button id="CategoryButton" class="categoryBtn"> NFL</button>
+                <button id="CategoryButton" class="categoryBtn"> NBA</button>
+                <button id="CategoryButton" class="categoryBtn"> Bundesliga</button>
+                <button id="CategoryButton" class="categoryBtn"> NHL</button>
             </div>
-
-            <div id="detail" hidden>
-                <h3>Mitarbeiter Detail-Ansicht</h3>
-                <p>%name</p>
-                <p>Alter: %age</p>
-                <p>Job: %job</p>
-                <p>Email: %email</p>
-                <nav>
-                </nav>
-                <a href="/overview">Overview</a>
+            <div id="News" class="siteContent">
+                <h3>NFL</h3>
+                <div id="Blogpost">
+                    <img style="width: 500px;"
+                        src="https://www.deutschlandfunk.de/media/thumbs/5/5a454c2de10a75b09a69b3a66a370a8ev1_max_755x424_b3535db83dc50e27c1bb1392364c95a2.jpg?key=4396a9"
+                        alt="Edit">
+                    <text>Beim lange Zeit ungefährdeten 28:22 des Super-Bowl-Champions
+                        am Donnerstag (Ortszeit) bei den Philadelphia Eagles
+                        warf der 44-Jährige Routinier zwei Touchdowns.
+                        Die Bucs bleiben durch den fünften Erfolg im
+                        sechsten Spiel an der Spitze der NFC South.
+                    </text>
+                </div>
             </div>
-            
-            <ul id="buttons" hidden>
-                <li><img class="icon" src="/img/edit.svg" alt="Edit"></li>
-                <li><img class="icon" src="/img/garbage.svg" alt="Delete"></li>
-            </ul>
-
-            <div id="contact" hidden>
-                <p> Bei Fragen kontaktieren Sie bitte: %name, %email</p>
-            </div>
-
         </div>
 
-        <hr>
-        <footer id="footer">
-            <div style="padding: 10px;background-color: blueviolet;"> ENDE DER SEITE</div>
-        </footer>
 
-        
-    </body>
+
+        <div id="overview" hidden>
+            <h3>Mitarbeiter Übersicht</h3>
+            <ul>
+                <li>
+                    <div>
+                        <p> %name </p>
+                        <nav>
+                        </nav>
+                    </div>
+                </li>
+            </ul>
+            <button type="button"> Person hinzufügen </button>
+        </div>
+
+        <div id="detail" hidden>
+            <h3>Mitarbeiter Detail-Ansicht</h3>
+            <p>%name</p>
+            <p>Alter: %age</p>
+            <p>Job: %job</p>
+            <p>Email: %email</p>
+            <nav>
+            </nav>
+            <a href="/overview">Overview</a>
+        </div>
+
+        <ul id="buttons" hidden>
+            <li><img class="icon" src="/img/edit.svg" alt="Edit"></li>
+            <li><img class="icon" src="/img/garbage.svg" alt="Delete"></li>
+        </ul>
+
+        <div id="contact" hidden>
+            <p> Bei Fragen kontaktieren Sie bitte: %name, %email</p>
+        </div>
+
+    </div>
+
+    <hr>
+    <footer id="footer">
+        <div> ENDE DER SEITE</div>
+    </footer>
+
+
+</body>
+
 </html>
