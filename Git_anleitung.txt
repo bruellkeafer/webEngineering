@@ -1,0 +1,3 @@
+Committen bietet sich immer an, wenn du irgendwas geschafft hast. Ist quasi wie Speichern in einem Spiel.
+Du solltest auf dem dev-Branch sein.
+Wenn du speichern (committen) möchtest, musst du auf das + in der Git Ansicht klicken (git add) für alle Files, die du updaten möchtest.
