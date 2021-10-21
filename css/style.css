@@ -46,7 +46,6 @@
 
 /* The sidebar menu */ /* source @ https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
 .sidebar {
-    margin-top: 100px;
     color: white;
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 160px; /* Set the width of the sidebar */
