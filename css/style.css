@@ -1,6 +1,6 @@
 
 .test{
-    background-color: blue;
+    background-color: rgb(41, 58, 212);
 }
 
 .categoryBtn{
@@ -8,8 +8,7 @@
     height: 100px;
     padding: 20px;
     margin-top: 20px;
-    background-color: rgb(100, 80, 80);
-    color: #f1f1f1;
+    background-color: rgb(252, 247, 247);
     border: none;
     border-radius: 20%;
     transition-duration: 0.2s;
@@ -17,14 +16,28 @@
 
 .categoryBtn:hover{
     transition-duration: 0.2s;
-    background-color: aquamarine;
+    background-color: #E9D2B0;
     color: #111;
 }
+.kurzeInformationZurSchlagzeile{
+  position: absolute;
+  color: #050301;
+}
+
+
+.blogPost{
+  text-align: left;
+}
+
+
+
 
 .header{
-  /* color: rgb(253, 11, 11);
-  height: 10px; /* Full-height: remove this if you want "auto" height */
-  /* width: 100%; /* Set the width of the sidebar */
+  text-align: center;
+   color: hsl(0, 0%, 0%);
+   background-color: #E9D2B0;
+   /* Set the width of the sidebar */
+}
   /*position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   /*z-index: 1; /* Stay on top */
   /*top: 0; /* Stay at the top */
@@ -32,8 +45,8 @@
   /*background-color: rgb(0, 255, 136); /* Black */
   /*overflow-x: hidden; /* Disable horizontal scroll */
   /*padding-top: 20px;
-  /*float: left; */
-}
+  /*float: left; 
+
 
 .fa{
   color: rgb(255, 255, 255);
@@ -41,29 +54,48 @@
 }
 
 .siteContent{
+    font-family: 'Roboto', sans-serif;
     margin-left: 160px;
 }
 
 /* The sidebar menu */ /* source @ https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
 .sidebar {
-    color: white;
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-weight:900;
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 160px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #111; /* Black */
+    background-color: rgb(0, 0, 0); /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
   }
   
+.ueberschrift{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-color: #E9D2B0;
+  border-spacing: 100px;
+  border-style: solid;
+  border-color: #E9D2B0;
+  
+  
+  
+}
+
+
+
+
   /* The navigation menu links */
   .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: #ffffff;
     display: block;
   }
   
@@ -71,6 +103,8 @@
   .sidenav a:hover {
     color: #f1f1f1;
   }
+
+  
   
   /* Style page content */
   .main {
