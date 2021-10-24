@@ -3,6 +3,7 @@
     background-color: rgb(41, 58, 212);
 }
 
+
 .categoryBtn{
     width: 100%;
     height: 100px;
@@ -58,6 +59,28 @@
     margin-left: 160px;
 }
 
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.logo{
+  width: 100%;
+  height: 110px;
+  border: none;
+  background-color: #E9D2B0;
+  color: #000000;
+  font-size: 67;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.CategoryHeader{
+  margin: auto;
+}
+
 /* The sidebar menu */ /* source @ https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
 .sidebar {
     color: rgb(0, 0, 0);
@@ -71,7 +94,6 @@
     left: 0;
     background-color: rgb(0, 0, 0); /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
   }
   
 .ueberschrift{
