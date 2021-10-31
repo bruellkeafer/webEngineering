@@ -24,21 +24,21 @@ and open the template in the editor.
 
 <body>
     
-    <header class="ueberschrift">
+    <header class="ueberschrift" hidden>
         <h1>Sport & Search</h1>
     </header>
-    <hr>
+    <hr hidden>
 
     <main id="main-content">
     </main>
 
 
     <div id="templates">
-        <hr>
+        <hrhidden>
         <div id="Blog_Overview">
             <div id="Sidebar" class="sidebar">
                 <div class="titleContainer">
-                    <div class = "title">Sportligen</div>
+                    <div class = "title vertical-center">Sportligen</div>
                 </div> 
                 <div class="CategoryBtnContainer">
                     <button id="CategoryButton" class="categoryBtn"> <img class="categoryLogo" src ="https://upload.wikimedia.org/wikipedia/de/thumb/1/12/National_Football_League_2008.svg/1200px-National_Football_League_2008.svg.png"   ></button>
@@ -56,19 +56,21 @@ and open the template in the editor.
                 </div>
             </div>
             <div id="News" class="siteContent">
-                <div class="loginButton">
+                <div id="ContentHeader" class="contentHeader">
+                    <div class="vertical-center">
+                        <div id="ContentTitle" class="contentTitle">Search & Sports</div>
+                    </div>
+                    <button class="loginButton" hidden></button>
                 </div>
-                <h3>News</h3>
-                <div id="Blogpost" class = "blogPost">
-                    <img class="categoryLogo" style="width: 800px;"
+                <div id="Blogpost" class = "blogPost" >
+                    <div class="imageContainer">
+                        <img class="contentImage" alt="Sportbild"
                         src="https://www.deutschlandfunk.de/media/thumbs/5/5a454c2de10a75b09a69b3a66a370a8ev1_max_755x424_b3535db83dc50e27c1bb1392364c95a2.jpg?key=4396a9"
                         alt="Edit">
-                    <text id = "kurzeInfo" class="kurzeInformationZurSchlagzeile">Beim lange Zeit ungefährdeten 28:22 des Super-Bowl-Champions
-                        am Donnerstag (Ortszeit) <br>bei den Philadelphia Eagles
-                        warf der 44-Jährige Routinier zwei Touchdowns.<br>
-                        Die Bucs bleiben durch den fünften Erfolg im
-                        sechsten Spiel an der Spitze der NFC South.
-                    </text>
+                    </div>
+                    <div class="textContainer">
+                    <p id = "kurzeInfo" class="kurzeInformationZurSchlagzeile">Beim lange Zeit ungefährdeten 28:22 des Super-Bowl-Champions am Donnerstag (Ortszeit) bei den Philadelphia Eagles </p>
+                    </div>
                 </div>
             </div>
         </div>
