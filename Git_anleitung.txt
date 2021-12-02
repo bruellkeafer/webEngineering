@@ -1,9 +1,0 @@
-Committen bietet sich immer an, wenn du irgendwas geschafft hast. Ist quasi wie Speichern in einem Spiel.
-Du solltest auf dem dev-Branch sein.
-Wenn du speichern (committen) möchtest, musst du auf das + in der Git Ansicht klicken (git add) für alle Files, die du updaten möchtest.
-Dann auf den Haken klicken für den Commit. Du musst bei jedem commit eine kurze Beschreibung abgeben, was du geändert hast. 
-Wenn dir nix einfällt ist egal (dann schreib bla).
-Am Ende musst du noch PUSH machen, damit die Commits zum Server gelangen. Das wird dir vorgeschlagen oder du findest es bei dem ... Knopf
-
-WICHTIG. Wenn wir parallel arbeiten, könnte es passieren, dass unsere gepushten Versionen nicht passen. Dann meckert der Server.
-        Um das zu verhindern solltest du immer bevor du PUSHst unter dem ... Knof einmal PULL machen.
