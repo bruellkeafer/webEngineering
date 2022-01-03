@@ -5,9 +5,9 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 
-<html>
+<html lang="de">
 
-<head lang="de">
+<head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <meta name="sports blog" content="Webseite im Rahmen des Moduls WebEngineering 1">
@@ -28,22 +28,33 @@ and open the template in the editor.
 <header>
     <h1>Search'n'Sports</h1>
     <section id="user-management">
-        <button id="login-button">Login</button>
-        <p id="user-name" hidden></p>
+        <button id="login-logout-button">Login / Logout</button>
+        <span id="user-name">Max Musteruser</span>
     </section>
-    <section id="blog-selection" hidden>
+
+    <section id="blog-selection">
         <div class="w3-dropdown-hover">
             <button class="w3-button">Blogs</button>
             <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                <a href="#" class="w3-bar-item w3-button">Football</a>
-                <a href="#" class="w3-bar-item w3-button">Fussball</a>
-                <a href="#" class="w3-bar-item w3-button">Fangen</a>
+                <a href="#" class="w3-bar-item w3-button">
+                    Football
+                    <span>(10)</span>
+                </a>
+                <a href="#" class="w3-bar-item w3-button">
+                    Fussball
+                    <span>(45)</span>
+                </a>
+                <a href="#" class="w3-bar-item w3-button">
+                    Fangen
+                    <span>(3052)</span>
+                </a>
             </div>
         </div>
     </section>
-    <section id="selected-blog" hidden>
-        <h1 id="blog-name">Test Blog</h1>
-        <p id="post-count">5</p>
+
+    <section id="selected-blog">
+        <span id="blog-name">Test Blog</span>
+        <span id="post-count">5</span>
         <a href="https://webengineeringws21.blogspot.com/">Blogseite</a>
     </section>
 </header>
@@ -54,31 +65,27 @@ and open the template in the editor.
     <section id="blog-overview">
         <ol id="post-list">
             <li>
-                    <div id="post-in-list" class="post">
-                        <a  href="https://webengineeringws21.blogspot.com/2021/10/blog-post.html" >
-                        <p id="post-in-list-title">Post 1</p>
-                        <p id="post-creation-date-short">20d</p>
-                        <p id="post-last-edit-date-short">2d</p>
-                        <p id="post-comment-count">30</p>
-                        </a>
-                        <button id="post-in-list-delete-post">löschen</button>
-                        <button id="post-in-list-edit-post">editieren</button>
-
-                    </div>
+                <div id="post-in-list" class="post">
+                    <a  href="https://webengineeringws21.blogspot.com/2021/10/blog-post.html"></a>
+                    <span id="post-in-list-title">Last post</span>
+                    <span id="post-creation-date-short">20d</span>
+                    <span id="post-last-edit-date-short">2d</span>
+                    <span id="post-comment-count">30</span>
+                    <button id="post-in-list-delete-post">löschen</button>
+                    <button id="post-in-list-edit-post">editieren</button>
+                </div>
                 <button id="add-post">Post verfassen</button>
             </li>
         </ol>
     </section>
 
     <section id="post-detail-view">
-        <div id="post-view">
-            <h1 id="post-detail-view-title">Post Titel</h1>
-            <p id="post-creation-date-long">19.04.1634 3:52</p>
-            <p id="post-last-edit-date-long">24.12.2021 20:45</p>
-            <div id="post-content">
-                <img id="post-content-image" src="îmages/technik-taktik-kraft-beim.jpg" class="post-content-image" alt="Sportbild">
-                <p id="post-content-text" class="post-content-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
-            </div>
+        <h1 id="post-detail-view-title">Post Titel</h1>
+        <span id="post-creation-date-long">19.04.1634 3:52</span>
+        <span id="post-last-edit-date-long">24.12.2021 20:45</span>
+        <div id="post-content">
+            <img id="post-content-image" src="images/technik-taktik-kraft-beim.jpg" class="post-content-image" alt="Sportbild">
+            <p id="post-content-text" class="post-content-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
         </div>
         <div id="post-comments">
             <h1 id="post-comment-author">Heinrich Heine</h1>
@@ -98,14 +105,18 @@ and open the template in the editor.
 
     <section id="post-edit">
         <div id="post-edit-view">
-            <h1 id="post-edit-view-title">Post Titel</h1>
+            <h1 id="post-edit-view-title" contenteditable="true">Post Titel</h1>
             <p id="post-edit-view-creation-date-long">19.04.1634 3:52</p>
             <p id="post-edit-view-last-edit-date-long">24.12.2021 20:45</p>
-            <div id="post-content">
-                <img id="post-content-image" src="îmages/technik-taktik-kraft-beim.jpg" class="post-content-image" alt="Sportbild">
-                <p id="post-content-text" class="post-content-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+            <button id="post-edit-content-add-paragraph-at-start">Absatz hinzufügen</button>
+            <div id="post-edit-content">
+                <img id="post-edit-content-image" src="images/technik-taktik-kraft-beim.jpg" class="post-content-image" alt="Sportbild">
+                <p id="post-edit-content-text" class="post-content-text" contenteditable="true">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
             </div>
+            <button id="post-edit-content-add-paragraph-at-end">Absatz hinzufügen</button>
         </div>
+        <button id="save-post-edit">Speichern</button>
+        <button id="abort-post-edit">Abbrechen</button>
     </section>
 
 </main>
