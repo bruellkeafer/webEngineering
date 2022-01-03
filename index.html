@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+
+<head lang="de">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="sports blog" content="Webseite im Rahmen des Moduls WebEngineering 1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+    <title>Single Page App Without A Framework</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="css/base.css" rel="stylesheet">
+    <script defer src="js/model.js"></script>
+    <script defer src="js/view.js"></script>
+    <script defer src="js/presenter.js"></script>
+    <script defer src="js/router.js"></script>
+</head>
+
+<body>
+<header>
+    <h1>Search'n'Sports</h1>
+    <section id="user-management">
+        <button id="login-button">Login</button>
+        <p id="user-name" hidden></p>
+    </section>
+    <section id="blog-selection" hidden>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">Blogs</button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="#" class="w3-bar-item w3-button">Football</a>
+                <a href="#" class="w3-bar-item w3-button">Fussball</a>
+                <a href="#" class="w3-bar-item w3-button">Fangen</a>
+            </div>
+        </div>
+    </section>
+    <section id="selected-blog" hidden>
+        <h1 id="blog-name">Test Blog</h1>
+        <p id="post-count">5</p>
+        <a href="https://webengineeringws21.blogspot.com/">Blogseite</a>
+    </section>
+</header>
+<hr>
+
+<main id="main-content">
+
+    <section id="blog-overview">
+        <ol id="post-list">
+            <li>
+                    <div id="post-in-list" class="post">
+                        <a  href="https://webengineeringws21.blogspot.com/2021/10/blog-post.html" >
+                        <p id="post-in-list-title">Post 1</p>
+                        <p id="post-creation-date-short">20d</p>
+                        <p id="post-last-edit-date-short">2d</p>
+                        <p id="post-comment-count">30</p>
+                        </a>
+                        <button id="post-in-list-delete-post">löschen</button>
+                        <button id="post-in-list-edit-post">editieren</button>
+
+                    </div>
+                <button id="add-post">Post verfassen</button>
+            </li>
+        </ol>
+    </section>
+
+    <section id="post-detail-view">
+        <div id="post-view">
+            <h1 id="post-detail-view-title">Post Titel</h1>
+            <p id="post-creation-date-long">19.04.1634 3:52</p>
+            <p id="post-last-edit-date-long">24.12.2021 20:45</p>
+            <div id="post-content">
+                <img id="post-content-image" src="îmages/technik-taktik-kraft-beim.jpg" class="post-content-image" alt="Sportbild">
+                <p id="post-content-text" class="post-content-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+            </div>
+        </div>
+        <div id="post-comments">
+            <h1 id="post-comment-author">Heinrich Heine</h1>
+            <p id="post-comment-date">22.12.21</p>
+            <p id="post-comment-content">gut gebrüllt</p>
+            <button id="post-comment-delete-post">Kommentar löschen</button>
+        </div>
+        <button id="post-detail-view-delete-post">Post löschen</button>
+        <button id="post-detail-view-edit-post">Post hinzufügen</button>
+        <button id="post-back-to-overview-navigation" >
+            <a href="">
+                Post editieren
+            </a>
+        </button>
+    </section>
+
+
+    <section id="post-edit">
+        <div id="post-edit-view">
+            <h1 id="post-edit-view-title">Post Titel</h1>
+            <p id="post-edit-view-creation-date-long">19.04.1634 3:52</p>
+            <p id="post-edit-view-last-edit-date-long">24.12.2021 20:45</p>
+            <div id="post-content">
+                <img id="post-content-image" src="îmages/technik-taktik-kraft-beim.jpg" class="post-content-image" alt="Sportbild">
+                <p id="post-content-text" class="post-content-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<hr>
+<footer id="footer">
+</footer>
+
+<div id="templates" hidden>
+
+    <div id="overview">
+        <h3>Mitarbeiter Übersicht</h3>
+        <ul>
+            <li>
+                <div>
+                    <p> %name </p>
+                    <nav>
+                    </nav>
+                </div>
+            </li>
+        </ul>
+        <button type="button"> Person hinzufügen</button>
+    </div>
+
+    <div id="detail">
+        <h3>Mitarbeiter Detail-Ansicht</h3>
+        <p>%name</p>
+        <p>Alter: %age</p>
+        <p>Job: %job</p>
+        <p>Email: %email</p>
+        <nav>
+        </nav>
+        <a href="/overview">Overview</a>
+    </div>
+
+    <ul id="buttons">
+        <li><img class="icon" src="/img/edit.svg" alt="Edit"></li>
+        <li><img class="icon" src="/img/garbage.svg" alt="Delete"></li>
+    </ul>
+
+    <div id="contact">
+        <p> Bei Fragen kontaktieren Sie bitte: %name, %email</p>
+    </div>
+
+</div>
+</body>
+</html>
